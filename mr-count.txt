@@ -1,0 +1,20 @@
+wordcount = function(input,output=NULL,pattern=" ")
+{
+tt.map = function(.,lines) 
+ {
+  keyval (
+          unlist
+		   (
+		     strsplit(x=lines,split = pattern)
+		    )
+		  ,1)
+ }
+ 
+ tt.reduce = function(word,counts) 
+ {
+   keyval(word,sum(counts))
+ }
+ 
+ mapreduce(input=input,output=output,input.format='text',map=tt.map,reduce=tt.reduce,combine=T)
+}
+
