@@ -1,3 +1,3 @@
 # 
-# 个人学习记录所用
+# learning yashiro
 # 
