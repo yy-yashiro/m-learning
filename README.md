@@ -1,3 +1,3 @@
 # 
-# learning yashiro
+# yashiro 
 # 
